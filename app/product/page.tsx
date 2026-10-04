@@ -1,3 +1,11 @@
-export default function productPage() {
-  return <h1> product page</h1>;
+import { products } from "../product-data";
+import ProductList from "../productList";
+
+export default function product() {
+  return (
+    <div>
+      products
+      <ProductList products={products} />
+    </div>
+  );
 }
